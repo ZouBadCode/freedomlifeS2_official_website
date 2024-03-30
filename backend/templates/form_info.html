@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>簡單網頁表單</title>
+    <style>
+        .form-container {
+            margin: 0 auto;
+            width: 600px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <form>
+            <label for="Discord使用者名稱">Discord使用者名稱</label>
+            <input type="text" id="Discord使用者名稱" name="Discord使用者名稱" required><br>
+
+            <label for="Minecraft名稱">Minecraft名稱</label>
+            <input type="text" id="Minecraft名稱" name="Minecraft名稱" required><br>
+
+            <label for="email">電子郵件：</label>
+            <input type="email" id="email" name="email" required><br>
+            <fieldset>
+                <legend>你認識「無拘生存」多久？</legend>
+                <label><input type="radio" name="duration" value="instant" required> 立即發生</label><br>
+                <label><input type="radio" name="duration" value="one_month" required> 1個月內</label><br>
+                <label><input type="radio" name="duration" value="one_to_three_months" required> 1個月至3個月</label><br>
+                <label><input type="radio" name="duration" value="three_to_six_months" required> 3個月至6個月</label><br>
+                <label><input type="radio" name="duration" value="more_than_six_months" required> 6個月以上</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>你希望你的申請身分是？</legend>
+                <label><input type="radio" name="position" value="wingman" required> 無拘的好友（無頻道但想在無拘中協助或籌備）</label><br>
+                <label><input type="radio" name="position" value="influencer" required>
+                    無拘實況主（有頻道且想要合作或在無拘中實況）</label><br>
+                <label><input type="radio" name="position" value="pass" required> 無拘續約者（在通行證過期後期望續約者）</label><br>
+            </fieldset>
+            <input type="submit" value="提交">
+        </form>
+    </div>
+
+</body>
+
+</html>

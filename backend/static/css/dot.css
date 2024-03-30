@@ -1,0 +1,182 @@
+/* 箭頭容器的樣式 */
+#dot_arrow {
+    position: fixed;
+    bottom: 54px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    /* 容器寬度，根據點的大小調整 */
+    z-index: 1000;
+}
+
+/* 個別點的基本樣式 */
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    /* 改為絕對定位 */
+    opacity: 0;
+    animation: blink 1.5s infinite;
+}
+
+/* 透過設置top和left屬性來排列點成箭頭形狀 */
+.dot:nth-child(1) {
+    top: -40px;
+    left: 20px;
+}
+
+/* 最頂端的點 */
+.dot:nth-child(2) {
+    top: -27px;
+    left: 20px;
+}
+
+.dot:nth-child(3) {
+    top: -14px;
+    left: 20px;
+}
+
+.dot:nth-child(4) {
+    top: -2px;
+    left: 20px;
+}
+
+.dot:nth-child(5) {
+    top: -2px;
+    left: 33px;
+}
+
+.dot:nth-child(6) {
+    top: -2px;
+    left: 7px;
+}
+
+.dot:nth-child(7) {
+    top: -2px;
+    left: -6px;
+}
+
+.dot:nth-child(8) {
+    top: -2px;
+    left: 46px;
+}
+
+.dot:nth-child(9) {
+    top: 11px;
+    left: 40px;
+}
+
+.dot:nth-child(10) {
+    top: 11px;
+    left: 0px;
+}
+
+.dot:nth-child(11) {
+    top: 11px;
+    left: 20px;
+}
+
+.dot:nth-child(12) {
+    top: 22px;
+    left: 30px;
+
+}
+
+.dot:nth-child(13) {
+    top: 22px;
+    left: 10px;
+}
+
+.dot:nth-child(14) {
+    top: 31px;
+    left: 20px;
+}
+
+/* 最底部的點 */
+
+/* 閃爍動畫 */
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+/* 讓每個點的動畫有輕微的延遲差異 */
+.dot:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.dot:nth-child(4) {
+    animation-delay: 0.5s;
+}
+
+.dot:nth-child(5) {
+    animation-delay: 0.6s;
+}
+
+.dot:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.dot:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+.dot:nth-child(8) {
+    animation-delay: 0.6s;
+}
+
+.dot:nth-child(9) {
+    animation-delay: 0.6s;
+}
+
+.dot:nth-child(10) {
+    animation-delay: 0.6s;
+}
+
+.dot:nth-child(11) {
+    animation-delay: 0.6s;
+}
+
+.dot:nth-child(12) {
+    animation-delay: 0.6s;
+}
+
+.dot:nth-child(13) {
+    animation-delay: 0.6s;
+}
+
+.dot:nth-child(14) {
+    animation-delay: 0.6s;
+}
+
+/* 根據點的數量添加更多nth-child規則 */
+
+/* 閃爍動畫 */
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}

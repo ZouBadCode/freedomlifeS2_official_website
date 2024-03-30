@@ -1,0 +1,48 @@
+#sign_place {
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+    /* 垂直居中 */
+    height: 100vh;
+    /* 設置容器高度為視窗的高度 */
+    text-align: center;
+    /* 確保文本也居中對齊 */
+    left: 1070px;
+    bottom: -70px;
+
+}
+
+#sign {
+    position: relative;
+    width: 775px;
+    height: 851px;
+    transform: rotate(92deg);
+    transform-origin: bottom right;
+    z-index: 1;
+}
+
+@keyframes show {
+    from {
+        transform: rotate(92deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+#sign_word {
+    display: none;
+    position: absolute;
+    font-size: 37px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    width: 600px;
+    z-index: 2;
+    rotate: 337deg;
+    bottom: 468px;
+    left: 98px;
+}

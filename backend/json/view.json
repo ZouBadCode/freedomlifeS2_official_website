@@ -1,0 +1,14 @@
+[
+    {
+      "url": "http://localhost:25565/view/c.png",
+      "description": "圖片1的簡介"
+    },
+    {
+      "url": "http://localhost:25565/view/homeback.webp",
+      "description": "圖片2的簡介"
+    },
+    {
+      "url": "http://localhost:25565/view/sign.png",
+      "description": "圖片3的簡介"
+    }
+  ]

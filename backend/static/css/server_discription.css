@@ -1,0 +1,20 @@
+.server_discription {
+    padding: 20px;
+    margin-top: 20px;
+    height: 100vh;
+    /* 設置高度為視窗的100% */
+}
+
+#current-view{
+    width: 100px;
+    height: 100px;
+}
+
+#view-container{
+    width: 1565px;
+    height: 830px;
+    position: relative;
+    top: -66px;
+    left: 110px;
+
+}

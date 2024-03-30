@@ -1,0 +1,30 @@
+h1 {
+    font-size: 80px;
+    font-weight: bold;
+    color: rgb(51, 55, 58);
+}
+
+.cursor {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.title {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+    /* 垂直居中 */
+    height: 100vh;
+    /* 設置容器高度為視窗的高度 */
+    text-align: center;
+    /* 確保文本也居中對齊 */
+    left: 50%;
+}

@@ -1,0 +1,26 @@
+.home_pic {
+    position: fixed;
+    /* 或使用 absolute，取決於需要 */
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    /* 確保圖片在其他元素上方 */
+    transition: all 0.4s ease;
+    /* 平滑過渡效果 */
+    opacity: 1;
+    /* 初始不透明度 */
+}
+
+#logo {
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+}
+
+.fadeMoveUp {
+    opacity: 0;
+    /* 淡化效果 */
+    top: -100px;
+    /* 向上移動，調整此值以適合您的頁面 */
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>簡單網頁表單</title>
+    <style>
+        .form-container {
+            margin: 0 auto;
+            width: 600px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <form action="/submitForm" method="post">
+            <label for="你希望大家如何稱呼你">你希望大家如何稱呼你</label>
+            <input type="text" id="你希望大家如何稱呼你" name="你希望大家如何稱呼你" required><br>
+
+            <label for="你的頻道或品牌網址">你的頻道或品牌網址</label>
+            <input type="text" id="你的頻道或品牌網址" name="你的頻道或品牌網址" required><br>
+
+            <label for="你的作品 (審核用，影片或是直播之類的)">你的作品 (審核用，影片或是直播之類的)</label>
+            <input type="text" id="你的作品 (審核用，影片或是直播之類的)" name="你的作品 (審核用，影片或是直播之類的)"><br>
+
+            <label for="進入無拘生存的動機">進入無拘生存的動機</label>
+            <input type="text" id="進入無拘生存的動機" name="進入無拘生存的動機" required><br>
+
+            <label for="在無拘中最想聯動的成員？（沒有則填「無」）">在無拘中最想聯動的成員？（沒有則填「無」）</label>
+            <input type="text" id="在無拘中最想聯動的成員？（沒有則填「無」）" name="在無拘中最想聯動的成員？（沒有則填「無」）" required><br>
+
+            <label for="審核通過之後，你最想在無拘生存中做什麼">審核通過之後，你最想在無拘生存中做什麼</label>
+            <input type="text" id="審核通過之後，你最想在無拘生存中做什麼" name="審核通過之後，你最想在無拘生存中做什麼" required><br>
+
+            <label for="最後簡單的自我介紹一下吧">最後簡單的自我介紹一下吧</label>
+            <input type="text" id="最後簡單的自我介紹一下吧" name="最後簡單的自我介紹一下吧" required><br>
+
+            <input type="submit" value="提交">
+        </form>
+    </div>
+
+</body>
+
+</html>

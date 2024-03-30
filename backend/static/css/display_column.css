@@ -1,0 +1,25 @@
+.display_column {
+    position: relative;
+    border-radius: 35px;
+    width: 1757px;
+    height: 881px;
+    background-color: #85BDE6;
+    transition: background-color 0.5s ease;
+    /* 添加淡入淡出效果 */
+    top: 130px;
+}
+
+#text-display {
+    position: relative;
+    font-size: 70px;
+    /* 字體大小 */
+    color: rgb(64, 64, 71);
+    /* 字體顏色 */
+    text-align: center;
+    /* 文字位置：居中 */
+    letter-spacing: 2px;
+    /* 字間距 */
+    font-weight: 700;
+    left: 40px;
+    top: 40px;
+}

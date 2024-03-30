@@ -1,0 +1,26 @@
+.player_discription {
+    padding: 20px;
+    margin-top: 20px;
+    height: 100vh;
+    justify-content: center;
+    /* 水平居中 */
+    display: flex;
+    overflow: hidden;
+}
+
+
+#player_discription_title {
+    position: fixed;
+    opacity: 0;
+    display: block;
+    font-size: 80px;
+    top: -187px;
+    color: aliceblue;
+    z-index: 1;
+}
+
+.showText {
+    opacity: 1 !important;
+    transition: opacity 0.9s ease;
+    /* 完全不透明，顯示狀態 */
+}

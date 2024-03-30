@@ -1,0 +1,48 @@
+#leftButton,
+#rightButton {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    /* 維持圓形 */
+    font-size: 20px;
+    line-height: 80px;
+    /* 調整以垂直居中文字 */
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    background-color: rgba(196, 222, 231, 0.8);
+    /* 更亮的淡藍色背景 */
+    border: none;
+    /* 移除邊框 */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+    /* 更明亮的陰影 */
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+    /* 平滑過渡效果 */
+    z-index: 3;
+}
+
+#leftButton:hover,
+#rightButton:hover {
+    transform: scale(1.1);
+    /* 懸停時放大 */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.35);
+    /* 懸停時增加陰影 */
+    background-color: rgb(147, 176, 185);
+    /* 懸停時降低透明度 */
+}
+
+#leftButton {
+    position: absolute;
+    /* 為按鈕設置絕對定位 */
+    left: 0;
+    /* 將左按鈕放置在左側 */
+    top: 50%;
+}
+
+#rightButton {
+    position: absolute;
+    /* 為按鈕設置絕對定位 */
+    right: 0;
+    /* 將右按鈕放置在右側 */
+    top: 50%;
+}

@@ -1,0 +1,38 @@
+h2 {
+    font-size: 100px;
+    font-weight: bold;
+    color: rgb(51, 55, 58);
+}
+
+
+.welcome {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+    /* 垂直居中 */
+    height: 100vh;
+    /* 設置容器高度為視窗的高度 */
+    text-align: center;
+    /* 確保文本也居中對齊 */
+    left: 50%;
+    top: -100px;
+}
+
+#welcometounrestrained {
+    position: absolute;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+    /* 垂直居中 */
+    height: 100vh;
+    /* 設置容器高度為視窗的高度 */
+    text-align: center;
+    /* 確保文本也居中對齊 */
+    right: 35%;
+    width: 90%;
+}

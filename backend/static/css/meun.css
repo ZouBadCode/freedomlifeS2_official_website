@@ -1,0 +1,29 @@
+.menu-content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    /* 半透明背景 */
+    overflow-x: hidden;
+    /* 隱藏未顯示的內容 */
+    transition: 0.5s;
+    /* 平滑過渡效果 */
+    z-index: 1;
+}
+
+.menu-content a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    z-index: 101;
+}
+
+.menu-content a:hover {
+    color: #f1f1f1;
+}

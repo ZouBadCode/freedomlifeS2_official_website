@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>無拘生存官網</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/homeback.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dmtitle.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/meunbutton.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/meun.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/logo_pic.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dot.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/server_discription.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/player_discription.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/welcome.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sign_place.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/display_column.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/LRButton.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/video_player.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/join_place.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/form.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/form_container.css') }}">
+</head>
+
+<body>
+
+    <div id="home_pic" class="home_pic">
+        <img id="logo" src="{{ url_for('static', filename='image/2logo.fw.png') }}" onclick="goToHomePage()">
+    </div>
+    <div class="menu-button">
+        <div class="menu-line line1"></div>
+        <div class="menu-line line2"></div>
+        <div class="menu-line line3"></div>
+    </div>
+    <div id="main_page" class="main_page">
+        <div class="foggy-background">
+        </div>
+        <div id="sign_place">
+            <p id="sign_word">無拘生存是由YouTube創作者共同經營的Minecraft多人生存系列。</p>
+            <img id="sign" src="{{ url_for('static', filename='image/sign.png') }}"></img>
+        </div>
+
+
+        <div id="welcometounrestrained">
+            <div class="welcome">
+                <h2 id="welcometo">
+                    歡迎來到
+                </h2>
+            </div>
+            <div class="title">
+                <h1 id="dynamic-title"><span id="text-container"></span><span class="cursor">|</span></h1>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div id="menu-content" class="menu-content">
+        <!-- 選單項目 -->
+        <a href="#item1">項目 1</a>
+        <a href="#item2">項目 2</a>
+        <a href="#item3">項目 3</a>
+        <!-- 更多選單項目... -->
+    </div>
+    <div id="dot_arrow">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <div id="server_discription" class="server_discription">
+        <h2 id="ds_title">風景</h2>
+        <div id="view-container">
+            <img id="image-view" src="" alt="圖片瀏覽">
+            <p id="description"></p>
+            <button id="prev-view">pre</button>
+            <button id="next-view">></button>
+        </div>
+    </div>
+    <div id="player_discription" class="player_discription">
+        <div id="display_column" class="display_column">
+            <button id="leftButton"><i class="fas fa-arrow-left"></i></button>
+            <button id="rightButton"><i class="fas fa-arrow-right"></i></button>
+            <span id="text-display">玉米罐頭</span>
+            <video id="video_player">
+                <source id="video_source" src="" type="video/webm">
+            </video>
+        </div>
+    </div>
+    <div id="join_place">
+        <p id="join_word">
+            想加入我們嗎，點擊下方按鈕填寫申請表
+        </p>
+        <button id="join_button">點擊我開啟表單</button>
+    </div>
+    <div id="form_insert">
+    </div>
+</body>
+
+<script src="{{ url_for('static', filename='javascript/dmtitle.js')}}"></script>
+<script src="{{ url_for('static', filename='javascript/meun.js')}}"></script>
+<script src="{{ url_for('static', filename='javascript/sign_place.js')}}"></script>
+<script src="{{ url_for('static', filename='javascript/LRButton.js')}}"></script>
+<script src="{{ url_for('static', filename='javascript/scroll_main.js')}}"></script>
+<script src="{{ url_for('static', filename='javascript/logo_pic.js')}}"></script>
+<script src="{{ url_for('static', filename='javascript/join_page.js')}}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{{ url_for('static', filename='javascript/server_discription.js')}}"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

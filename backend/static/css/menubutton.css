@@ -1,0 +1,112 @@
+.menu-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 65px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 100;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+.menu-line {
+    height: 4px;
+    background: white;
+    margin: 0 5px;
+    transition: background 0.3s;
+    box-shadow: 0 0 8px white;
+    /* 添加陰影來增強光輝 */
+}
+
+.menu-button:hover {
+    background: rgba(255, 255, 255, 0.5);
+    border-color: transparent;
+    animation: rainbow-border 3s linear infinite;
+}
+
+.menu-button:hover .menu-line {
+    background: transparent;
+    animation: rainbow-animation 3s linear infinite;
+    filter: brightness(150%);
+    /* 增加亮度 */
+}
+
+.menu-button:hover .line1 {
+    animation-delay: -0.1s;
+}
+
+.menu-button:hover .line2 {
+    animation-delay: -0.2s;
+}
+
+.menu-button:hover .line3 {
+    animation-delay: -0.3s;
+}
+
+@keyframes rainbow-border {
+    0% {
+        border-color: red;
+    }
+
+    17% {
+        border-color: orange;
+    }
+
+    34% {
+        border-color: yellow;
+    }
+
+    51% {
+        border-color: green;
+    }
+
+    68% {
+        border-color: blue;
+    }
+
+    85% {
+        border-color: indigo;
+    }
+
+    100% {
+        border-color: violet;
+    }
+}
+
+@keyframes rainbow-animation {
+    0% {
+        background: red;
+    }
+
+    17% {
+        background: orange;
+    }
+
+    34% {
+        background: yellow;
+    }
+
+    51% {
+        background: green;
+    }
+
+    68% {
+        background: blue;
+    }
+
+    85% {
+        background: indigo;
+    }
+
+    100% {
+        background: violet;
+    }
+}
